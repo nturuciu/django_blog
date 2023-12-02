@@ -1,0 +1,65 @@
+<!-- index.html -->
+{% extends "base.html" %}
+
+
+{% block title %}My Child Page{% endblock %}
+
+{% block content %}
+
+<div class="max-width: 1200px;
+margin: 0 auto">
+  <style>
+    .blog-post {
+      margin-bottom: 30px;
+    }
+
+    .blog-post-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .blog-post-author {
+      font-style: italic;
+      margin-bottom: 10px;
+      max-width: 1200px; 
+      margin: 0 auto;
+    }
+
+    .blog-post-content {
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Blog</h1>
+
+    <div class="row">
+      <div class="col-md-8">
+        <div class="blog-post">
+          <h2 class="blog-post-title">The Internet</h2>
+
+          <div class="blog-post-author"></div>
+
+          <div class="blog-post-content">
+            <p>We live in a world where the internet and the world wide web have, in the matter of 
+                only three decades, shifted from being at the forefront of a new frontier of communication technology to being for most people an incredibly unremarkable part of our 
+                culture and daily life. Many once held an optimism that the internet would, for example, revolutionise work and office life, and create active, engaged citizens instead of 
+                the passive subjects of the broadcast media age (Poster, 1995), or lead to the creation 
+                of alternative communities, worlds and even identities free from the prejudices of 
+                offline society (Rheingold, 1993)</p>
+
+                      </div>
+        </div>
+
+        </div>
+
+      <div class="col-md-4">
+        </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,23 @@
+
+{% extends "base.html" %}
+
+{% block title %}My Child Page{% endblock %}
+
+{% block content %}
+<div>
+    <h1> Hello, World! </h1>
+    {%for post in posts%}
+    <h2> <a href=""></a> </h2>
+    <img src="{{}}" alt="post image" width="300">
+    <p>{{post.content}}</p>
+    <p> Category:{{post.category}}</p>
+    <p> Author: {{post.author}}</p>
+    <p> Date Posted: {{post.create_at}}</p>
+
+    {% endfor %}
+</div>
+
+
+
+
+{% endblock %}

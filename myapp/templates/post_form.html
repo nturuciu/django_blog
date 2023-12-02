@@ -1,0 +1,13 @@
+<!-- index.html -->
+{% load bootrap4 %}
+
+{% extends "base.html" %}
+
+{% block title %}My Child Page{% endblock %}
+
+{% block content %}
+<h1> Add Post </h1>
+<form action="{% url 'create_post' %}" method="post" enctype="multipart/form-data"></form>
+{% csrf token %}
+{% bootstrap_form form %}
+{% endblock %}
